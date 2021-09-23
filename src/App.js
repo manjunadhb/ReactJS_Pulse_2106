@@ -1,16 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
+import Login from './pages/common/Login';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h3>Pavani is done with clone and push</h3>
-        <h3>Shashi Bushan is done with clone and push</h3>
-        <h3>Sushma is done with clone and push</h3>
-        <h3>Sachin Netha is done with clone and push</h3>
-      </header>
-    </div>
+    <Login/>
   );
 }
 
