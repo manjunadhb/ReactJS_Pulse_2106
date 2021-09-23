@@ -8,6 +8,7 @@ function App() {
       <h3>Pavani is done with clone and push</h3>
         <h3>Shashi Bushan is done with clone and push</h3>
         <h3>Sushma is done with clone and push</h3>
+        <h3>Sachin Netha is done with clone and push</h3>
       </header>
     </div>
   );
