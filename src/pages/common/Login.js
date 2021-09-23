@@ -6,7 +6,7 @@ export default function Login() {
             <h1>Login</h1>
             <input type="text"/>
             <input type="password"/>
-            <button>LOGIn</button>
+            <button>LOGIN</button>
         </div>
     )
 }
