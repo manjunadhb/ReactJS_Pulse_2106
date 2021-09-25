@@ -14,8 +14,8 @@ function App() {
         {/* login component opens when pulse page opened */}
         <Route exact path="/" component={Login} />
         {/* new user to the pulse can create account  on click the signup  */}
-        <Route  path="/signup" component={SignUp} />
-        <Route  path="/password" component={Password} />
+        <Route path="/signup" component={SignUp} />
+        <Route path="/password" component={Password} />
         <Route path="/home" component={Home} />
       </Switch>
 

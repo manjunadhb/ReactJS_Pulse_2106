@@ -14,7 +14,7 @@ export default function Login() {
         console.log(user);
         console.log(password);
         console.log(history);
-        alert("working");
+        // alert("working");
         let jsonData = await validateLoginService(user, password);
         console.log(jsonData);
         console.log(json());

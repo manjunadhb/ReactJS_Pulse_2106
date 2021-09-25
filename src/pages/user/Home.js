@@ -19,7 +19,7 @@ export default function Home() {
             <React.Suspense fallback="Page is loading">
                 <Switch>
 
-                    <Route path="/" component={Login} />
+                    <Route exact path="/home" component={Login} />
                     <Route path="/home/dsu" component={DailyStatusUpdate} />
                     <Route path="/home/tasks" component={Tasks} />
                     <Route path="/home/messages" component={Messages} />
