@@ -1,0 +1,102 @@
+.loginForm{
+    width:400px;
+    background-color:#eceef1;
+    padding: 0%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%; 
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.loginForm h2{
+    text-align: center;
+    color:#4db3a5;
+    font-size: 28px;
+    font-weight: 400;
+}
+.loginForm input{
+
+    padding: 2%;
+    padding-top: 1%;
+    height: 35px;
+    background-color:#dde3ec;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    outline: none;
+    border: none;
+}
+.loginForm input::placeholder{
+    color:#8a8e94;
+    padding-left: 2px;
+    font-weight:300;
+}
+
+
+
+.loginButton{
+    
+    display: grid;
+    grid-template-columns:minmax(50px,100px) 1fr 1fr;
+    column-gap: 1px; 
+}
+.loginButton button{
+    background-color: #45B6AF;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight:700;
+    font-size:small;
+    margin-left: 20%; 
+    padding: 3%;
+    cursor: pointer;
+}
+.loginButton a{
+    text-decoration: none;
+    color:#5b9bd1;
+    font-weight: 500;
+    position: relative;
+    bottom: -10px;
+    
+}
+.loginButton a:hover{
+    text-decoration-line: underline;
+}
+
+.create{
+
+    text-align: center;
+    padding:5%;
+    margin-top: 3%;
+    margin-left: 0%;
+    overflow-x: hidden;
+    background-color: #6c7a8d;
+}
+.create a {  
+    text-decoration: none;
+    color: #c3cedd;
+    font-weight: 500;
+
+}
+
+.create a:hover{
+    text-decoration-line: underline;
+}
+.label {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.label span{
+    position: relative;
+    bottom: -10px;
+    color: #8290a3;
+}
