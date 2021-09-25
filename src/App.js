@@ -1,9 +1,11 @@
+import logo from './logo.svg';
 import './App.css';
-import Login from './pages/common/Login';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import Home from './pages/user/Home';
 
 function App() {
   return (
-    <Login/>
+    <Home/>
   );
 }
 
