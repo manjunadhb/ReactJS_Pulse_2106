@@ -1,3 +1,8 @@
+.login{
+    background-color: #364150 !important;
+    width: 100vw;
+    height: 100vh;
+}
 .loginForm{
     width:400px;
     background-color:#eceef1;
@@ -5,7 +10,7 @@
     padding-bottom: 0%;
     padding-top: 0%;
     margin-top: 0%;
-    margin-bottom: 0%; 
+    margin-bottom: 0% ;
     margin-left: auto;
     margin-right: auto;
 
@@ -21,23 +26,25 @@
     color:#4db3a5;
     font-size: 28px;
     font-weight: 400;
+    margin: 5% !important;
 }
 .loginForm input{
 
-    padding: 2%;
-    padding-top: 1%;
-    height: 35px;
+    padding: 5% !important;
+    padding-top: 2%;
+    height: 40px !important;
     background-color:#dde3ec;
-    margin-bottom: 2%;
-    margin-left: 5%;
+    margin-bottom: 2% !important;
+    margin-left: 5% !important;
     margin-right: 5%;
+    margin-top: 2% !important;
     outline: none;
     border: none;
 }
 .loginForm input::placeholder{
     color:#8a8e94;
     padding-left: 2px;
-    font-weight:300;
+    font-weight:300 !important;
 }
 
 
@@ -61,14 +68,14 @@
 }
 .loginButton a{
     text-decoration: none;
-    color:#5b9bd1;
+    color:#5b9bd1 !important;
     font-weight: 500;
     position: relative;
     bottom: -10px;
     
 }
 .loginButton a:hover{
-    text-decoration-line: underline;
+    text-decoration-line: underline !important;
 }
 
 .create{
@@ -81,14 +88,14 @@
     background-color: #6c7a8d;
 }
 .create a {  
-    text-decoration: none;
-    color: #c3cedd;
+    text-decoration: none !important;
+    color: #c3cedd !important;
     font-weight: 500;
 
 }
 
 .create a:hover{
-    text-decoration-line: underline;
+    text-decoration-line: underline !important;
 }
 .label {
     display: flex;

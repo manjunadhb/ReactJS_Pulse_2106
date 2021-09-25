@@ -7,7 +7,7 @@ import StaticLink from './StaticLink';
 
 export default function Password() {
     return (
-        <div>
+        <div className="login">
             <StaticLogo />
             <div className="loginForm">
                 <h2>Forgot Password ?</h2>

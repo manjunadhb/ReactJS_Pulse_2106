@@ -6,8 +6,8 @@ import StaticLogo from './StaticLogo';
 import StaticLink from './StaticLink';
 
 export default function Login() {
-    const [user, setUser] = useState('');
-    const [password, setPassword] = useState('');
+    const [user, setUser] = useState('narendramodi@gmail.com');
+    const [password, setPassword] = useState('merabharathmahaan');
     const history = useHistory();
 
     const validateLogin = async () => {
@@ -24,12 +24,12 @@ export default function Login() {
     }
 
     return (
-        <div>
+        <div className="login">
             <StaticLogo />
             <div className="loginForm">
                 <h2>Sign In</h2>
-                <input type="text" onChange={(e) => setUser(e.target.value)} placeholder="Email" />
-                <input type="password" onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
+                <input type="text" value="narendramodi@gmail.com" onChange={(e) => setUser(e.target.value)} placeholder="Email" />
+                <input type="password" value="merabharathmahaan" onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
                 <div className="loginButton">
                     <button onClick={validateLogin}>LOGIN</button>
                     <div className="label">
@@ -41,7 +41,7 @@ export default function Login() {
                     <NavLink to="/signup">CREATE AN ACCOUNT</NavLink>
                 </div>
             </div>
-            <StaticLink/>
+            <StaticLink />
         </div>
     )
 }

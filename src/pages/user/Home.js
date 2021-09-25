@@ -1,27 +1,34 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, useRouteMatch } from 'react-router-dom'
+import Login from '../common/Login'
 import Navigation from './Navigation'
 
-const DailyStatusUpdate = React.lazy(()=>import('./DailyStatusUpdate'))
-const Tasks = React.lazy(()=>import('./Tasks'))
-const Messages = React.lazy(()=>import('./Messages'))
-const Leaves = React.lazy(()=>import('./Leaves'))
-const Request = React.lazy(()=>import('./Requests'))
+const DailyStatusUpdate = React.lazy(() => import('./DailyStatusUpdate'))
+const Tasks = React.lazy(() => import('./Tasks'))
+const Messages = React.lazy(() => import('./Messages'))
+const Leaves = React.lazy(() => import('./Leaves'))
+const Request = React.lazy(() => import('./Requests'))
 
 export default function Home() {
-   
+    const match = useRouteMatch();
+    console.log(match);
+
     return (
         <div>
-            <Navigation/>
+            <Navigation />
             <React.Suspense fallback="Page is loading">
-            <Switch>
-                <Route path="/home" exact component={Home}/>
-                <Route path="/dsu" component={DailyStatusUpdate}/>
-                <Route path="/tasks" component={Tasks}/>
-                <Route path="/messages" component={Messages}/>
-                <Route path="/leaves" component={Leaves}/>
-                <Route path ="/requests" component={Request}/>
-            </Switch>
+                <Switch>
+
+                    <Route path="/" component={Login} />
+                    <Route path="/home/dsu" component={DailyStatusUpdate} />
+                    <Route path="/home/tasks" component={Tasks} />
+                    <Route path="/home/messages" component={Messages} />
+                    <Route path="/home/leaves" component={Leaves} />
+                    <Route path="/home/requests" component={Request} />
+
+
+
+                </Switch>
             </React.Suspense>
         </div>
     )

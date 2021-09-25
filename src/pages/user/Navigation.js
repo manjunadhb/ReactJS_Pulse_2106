@@ -12,28 +12,28 @@ export default function Navigation() {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown"> */}
                 <ul className="navbar-nav">
                     <li className="nav-item">
-                    <NavLink className="nav-link active" aria-current="page" to="/home">Home</NavLink>
+                        <NavLink exact className="nav-link" aria-current="page" to="/home">Home</NavLink>
                     </li>
                     <li className="nav-item">
-                    <NavLink className="nav-link" to="/dsu">Daily Staus Update</NavLink>
+                        <NavLink className="nav-link" to="/home/dsu">Daily Staus Update</NavLink>
                     </li>
                     <li className="nav-item">
-                    <NavLink className="nav-link" to="/tasks">Tasks</NavLink>
+                        <NavLink className="nav-link" to="/home/tasks">Tasks</NavLink>
                     </li>
                     <li className="nav-item">
-                    <NavLink className="nav-link" to="/messages">Messages</NavLink>
+                        <NavLink className="nav-link" to="/home/messages">Messages</NavLink>
                     </li>
                     <li className="nav-item">
-                    <NavLink className="nav-link" to="/leaves">Leaves</NavLink>
+                        <NavLink className="nav-link" to="/home/leaves">Leaves</NavLink>
                     </li>
                     <li className="nav-item">
-                    <NavLink className="nav-link" to="/requests">Requests</NavLink>
+                        <NavLink className="nav-link" to="/home/requests">Requests</NavLink>
                     </li>
-                
-                    
-                
+
+
+
                 </ul>
-                </div>
+            </div>
             {/* </div> */}
         </nav>
     )
