@@ -1,10 +1,10 @@
 import './App.css';
-import Login from './component/pages/common/Login';
-import SignUp from './component/pages/common/SignUp';
+import Login from './components/pages/common/Login';
+import SignUp from './components/pages/common/SignUp';
 import { Route, Switch } from 'react-router-dom';
-import Password from './component/pages/common/Password';
+import Password from './components/pages/common/Password';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Home from './component/pages/user/Home';
+import Home from './components/pages/user/Home';
 
 function App() {
   return (
