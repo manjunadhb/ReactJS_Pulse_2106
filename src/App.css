@@ -24,6 +24,12 @@
   color: white;
 }
 
+.tasksTable
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid #83c5be;
+}
+
 .App-link {
   color: #61dafb;
 }
