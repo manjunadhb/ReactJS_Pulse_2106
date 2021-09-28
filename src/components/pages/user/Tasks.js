@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Tasks() {
     return (
-        <div className="mainContainer3">
+        <div className="mainContainer">
             <p className="title">Tasks</p>
          <h3 className="title3">Tasks assigned</h3>
             <label className="records">Records</label>
