@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../styles/Leaves.css'
 
 export default function Leaves() {
     return (
