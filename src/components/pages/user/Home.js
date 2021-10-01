@@ -15,7 +15,7 @@ export default function Home() {
 
     return (
         <div>
-            <Navigation />
+            {/* <Navigation /> */}
             <React.Suspense fallback="Page is loading">
                 <Switch>
 
