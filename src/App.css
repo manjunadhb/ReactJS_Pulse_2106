@@ -120,6 +120,7 @@
   color: #009ef7;
 }
 
+
 /* Delete.js CSS */
 
 .deleteDiv label {
@@ -156,6 +157,16 @@
 .delGrid a:hover {
   background: #f1faff;
   color: #009ef7;
+}
+.tasksTable
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid #83c5be;
+}
+
+.App-link {
+  color: #61dafb;
+
 }
 
 /* AddNewBatch.js CSS */

@@ -18,7 +18,7 @@ export default function Home() {
 
     return (
         <div>
-            <Navigation />
+            {/* <Navigation /> */}
             <React.Suspense fallback="Page is loading">
                 <Switch>
                     <Route exact path="/home" component={Login} />

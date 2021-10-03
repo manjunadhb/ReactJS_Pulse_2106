@@ -11,23 +11,32 @@ export default function Navigation() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavDropdown"> */}
                 <ul className="navbar-nav">
-                    <li className="nav-item">
-                        <NavLink exact className="nav-link" aria-current="page" to="/home">Home</NavLink>
+                <li className="nav-item">
+                        <NavLink exact className="nav-link" aria-current="page" to="/dashbord">Dashboard</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/home/dsu">Daily Staus Update</NavLink>
+                        <NavLink exact className="nav-link" aria-current="page" to="/Report">Report</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/home/tasks">Tasks</NavLink>
+                        <NavLink exact className="nav-link" aria-current="page" to="/manage">Manage</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/home/messages">Messages</NavLink>
+                        <NavLink exact className="nav-link" aria-current="page" to="/setting">Setting</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/home/leaves">Leaves</NavLink>
+                        <NavLink className="nav-link" to="/dsu">Daily Staus Update</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" to="/home/requests">Requests</NavLink>
+                        <NavLink className="nav-link" to="/tasks">Tasks</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/messages">Messages</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/leaves">Leaves</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/requests">Requests</NavLink>
                     </li>
                     {/* <li className="nav-item">
                         <NavLink className="nav-link" to="/manageBatches">MB</NavLink>

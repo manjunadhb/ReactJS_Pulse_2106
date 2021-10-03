@@ -1,0 +1,71 @@
+.mainbox{
+    margin: 1px;
+    text-align: center;
+    color: rgba(15, 9, 9, 0.356);
+    overflow-y: visible;
+    background-image: url(https://cdn.cbeditz.com/cbeditz/preview/business-powerpoint-background-image-full-hd-3-11610970514axfvojsp3k.jpg);
+    height:740px;
+    background-repeat: no-repeat;
+    background-size:cover ;
+}
+.box{
+    color: white;
+    background-color: rgb(126, 111, 109);
+    padding: 10px;
+    font-weight: 900;
+    font-size: 30px;
+    border-radius: 5px;
+}
+.details{
+    border-radius: 20px;
+    font-size: 20px ;
+    position: relative;
+    width:fit-content ;
+    top: 50px;
+    left: 40%;
+    background-color: rgba(215, 236, 167, 0.336);
+    color:rgb(14, 0, 61);
+    padding: 30px;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+}
+label{
+    color: rgb(0, 14, 136);
+    display: grid;
+    grid-column:10px ;
+    padding: 10px;
+}
+.input3{
+    color: rgb(151, 132, 151);
+    font-size: 15px;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    text-transform: uppercase;    
+}
+.input3:hover{
+    background-color: rgba(84, 76, 190, 0.671);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.input1:hover{
+    background-color: rgba(245, 222, 179, 0.623);
+}
+.input1{
+    font-size: 15px;
+    border-radius: 5px;
+    width: 190px;
+    height: 50px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+button:hover{
+    font-weight: 500;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
