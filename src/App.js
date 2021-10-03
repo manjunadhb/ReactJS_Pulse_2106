@@ -5,6 +5,12 @@ import { Route, Switch } from 'react-router-dom';
 import Password from './components/pages/common/Password';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/pages/user/Home';
+import ManageUsers from './components/pages/admin/ManageUsers';
+import ManageBatches from './components/pages/admin/ManageBatches';
+import Edit from './components/pages/admin/files(manageBatches)/Edit';
+import Delete from './components/pages/admin/files(manageBatches)/Delete';
+import AddNewBatch from './components/pages/admin/files(manageBatches)/AddNewBatch';
+
 
 function App() {
   return (
@@ -17,8 +23,11 @@ function App() {
         <Route path="/signup" component={SignUp} />
         <Route path="/password" component={Password} />
         <Route path="/home" component={Home} />
-      </Switch>
-
+        {/* <Route path="/manageBatches" component={ManageBatches}/> */}
+        </Switch>
+      {/* <Route path="/manageBatches/edit" component={Edit} />
+       <Route path="/manageBatches/delete" component={Delete}/>
+       <Route path="/manageBatches/addNewBatch" component={AddNewBatch}/> */}
     </div>
 
 

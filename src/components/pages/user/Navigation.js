@@ -29,10 +29,19 @@ export default function Navigation() {
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/home/requests">Requests</NavLink>
                     </li>
-
-
-
-                </ul>
+                    {/* <li className="nav-item">
+                        <NavLink className="nav-link" to="/manageBatches">MB</NavLink>
+                    </li> */}
+                    {/* <li className="nav-item">
+                        <NavLink className="nav-link" to="/manageBatches/edit"></NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/manageBatches/delete"></NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/manageBatches/addNewBatch"></NavLink>
+                    </li> */}
+         </ul>
             </div>
             {/* </div> */}
         </nav>

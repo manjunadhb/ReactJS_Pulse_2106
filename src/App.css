@@ -1,38 +1,318 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ManageBatches.js CSS  */
+.mb_div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.mb_div input {
+  margin-right: 5%;
+}
+.batchLink {
+  text-decoration: none;
+  width: 14%;
   color: white;
+  background: #009ef7;
+  text-align: center;
+  margin-left: 5%;
+  padding: 0.5%;
+  font-family: Poppins, Helvetica, sans-serif;
+}
+.batchLink:hover {
+  color: #f1faff;
+  background: rgb(53, 149, 246);
+}
+.mbTable tr {
+  border: none;
+  border-bottom: 1px solid #e4e6ef !important;
+}
+.mbTable {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 5%;
+  background: white;
+  box-shadow: 0 0 11px gray;
+}
+.mbTable th {
+  color: #b5b5c3;
+}
+.mbTable td {
+  color: #7e8299;
+}
+.mbContainer {
+  text-align: center;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 0.95em;
 }
 
-.App-link {
-  color: #61dafb;
+/* Edit.js and Delete.js CSS  */
+
+.edit_deleteContainer {
+  text-align: center;
+  margin-top: -14%;
+  margin-left: 32%;
+  position: relative;
+  z-index: 1;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: #6b705c;
+}
+.edit_deleteDiv {
+  width: 50%;
+  height: 80%;
+  background: white;
+  box-shadow: 0 0 15px gray;
+}
+.edit_delLink
+{
+  text-decoration: none;
+  color:#7e8299;
+  padding: 3%;
+}
+.edit_delLink:hover
+{
+ background: #f1faff;
+  color: #009ef7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*    Edit.js CSS */
+
+.editDiv label {
+  padding-top: 4%;
+  color: black;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 1.2em;
+}
+.editDiv input {
+  margin-left: 2%;
+}
+.editGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.editGrid button {
+  width: 21%;
+  color: white;
+  background: #009ef7;
+  border: none;
+  margin-top: 4%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.editGrid button:hover {
+  color: #f1faff;
+  background: rgb(53, 149, 246);
+}
+.editGrid a {
+  color: #5e6278;
+  background: #e4e6ef;
+  text-decoration: none;
+  margin-top: 4%;
+  width: 21%;
+  padding: 1%;
+  margin-bottom: 2%;
+}
+.editGrid a:hover {
+  background: #f1faff;
+  color: #009ef7;
+}
+
+/* Delete.js CSS */
+
+.deleteDiv label {
+  color: black;
+  padding-top: 4%;
+}
+.delGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.delGrid button {
+  color: white;
+  background: #009ef7;
+  border: none;
+  margin-bottom: 2%;
+  margin-top: 4%;
+  padding: 1%;
+  width: 42%;
+}
+.delGrid button:hover {
+  color: #f1faff;
+  background: rgb(53, 149, 246);
+}
+.delGrid a {
+  color: #5e6278;
+  background: #e4e6ef;
+  text-decoration: none;
+  margin-bottom: 2%;
+  margin-top: 4%;
+  width: 42%;
+  padding: 1%;
+}
+.delGrid a:hover {
+  background: #f1faff;
+  color: #009ef7;
+}
+
+/* AddNewBatch.js CSS */
+
+.addNewBatchContainer {
+  text-align: center;
+  margin-top: -25%;
+  margin-left: 35%;
+  position: absolute;
+  z-index: 1;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: #6b705c;
+}
+.addNewBatchDiv {
+  width: 140%;
+  height: 490px;
+  background: white;
+  box-shadow: 0 0 15px gray;
+}
+.addNewBatchDiv h6 {
+  padding-top: 5%;
+  color: black;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+.addNewBatchDiv .course {
+  margin-left: -5%;
+}
+.rB1 {
+  margin-left: 3%;
+}
+.rB2 {
+  margin-left: -16%;
+}
+.rB3 {
+  margin-left: -28%;
+}
+.rB4 {
+  margin-left: -20%;
+}
+.startDate label {
+  margin-left: -5%;
+  margin-top: 2%;
+}
+.startDate input {
+  margin-left: -12%;
+}
+.batchId label {
+  margin-left: -1%;
+  margin-top: 2%;
+}
+.batchId input {
+  margin-left: -6%;
+}
+.feeDetails label {
+  margin-left: -13%;
+  margin-top: 2%;
+}
+.feeDetails div {
+  width: 50%;
+  height: 120px;
+  background: white;
+  margin-left: -18%;
+  margin-top: 4%;
+  box-shadow: 0 0 5px gray;
+}
+.batchStatus label {
+  margin-left: -17%;
+  margin-top: 2%;
+}
+.batchStatus select {
+  margin-left: -18%;
+  margin-top: 2%;
+}
+.addNewBatchDiv div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.addNewBatchDiv button {
+  color: white;
+  background: #009ef7;
+  border: none;
+  margin-top: 6%;
+  padding: 1%;
+}
+.addNewBatchDiv button:hover {
+  color: white;
+  background: #009ef6;
+}
+.addNewBatchDiv a {
+  color: #5e6278;
+  background: #e4e6ef;
+  text-decoration: none;
+  margin-top: 6%;
+  width: 20%;
+  padding: 1%;
+}
+.addNewBatchDiv a:hover {
+  background: #f1faff;
+  color: #009ef7;
+}
+@media screen and (max-width: 800px) {
+  /* Manage Batches CSS */
+  .mbTable {
+    width: 150%;
+    height: auto;
+    margin-left: 5%;
+    margin-top: 18%;
+    background: white;
+    box-shadow: 0 0 15px gray;
   }
-  to {
-    transform: rotate(360deg);
+  .mb_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+  }
+  .mb_div input {
+    margin-right: 5%;
+  }
+  .batchLink {
+    text-decoration: none;
+    width: 25%;
+    color: white;
+    background: #009ef6;
+    text-align: center;
+    margin-left: 5%;
+  }
+  /* Edit.js and Delete.js CSS */
+  .edit_deleteDiv {
+    width: 60%;
+    height: 80%;
+    background: white;
+    box-shadow: 0 0 15px gray;
+  }
+  .edit_deleteContainer {
+    text-align: center;
+    margin-top: -35%;
+    margin-left: 28%;
+    position: relative;
+    z-index: 1;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: #6b705c;
+  }
+
+  /* AddNewBatch.js CSS */
+  .addNewBatchContainer {
+    text-align: center;
+    margin-top: -35%;
+    margin-left: 35%;
+    position: absolute;
+    z-index: 1;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: #6b705c;
   }
 }

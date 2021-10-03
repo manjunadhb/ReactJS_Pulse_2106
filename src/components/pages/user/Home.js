@@ -1,5 +1,8 @@
 import React from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
+import Edit from '../admin/files(manageBatches)/Edit'
+import ManageBatches from '../admin/ManageBatches'
+import ManageUsers from '../admin/ManageUsers'
 import Login from '../common/Login'
 import Navigation from './Navigation'
 
@@ -18,16 +21,13 @@ export default function Home() {
             <Navigation />
             <React.Suspense fallback="Page is loading">
                 <Switch>
-
                     <Route exact path="/home" component={Login} />
                     <Route path="/home/dsu" component={DailyStatusUpdate} />
                     <Route path="/home/tasks" component={Tasks} />
                     <Route path="/home/messages" component={Messages} />
                     <Route path="/home/leaves" component={Leaves} />
                     <Route path="/home/requests" component={Request} />
-
-
-
+        
                 </Switch>
             </React.Suspense>
         </div>
