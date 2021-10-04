@@ -36,14 +36,7 @@ function App() {
         {/* new user to the pulse can create account  on click the signup  */}
         <Route path="/signup" component={SignUp} />
         <Route path="/password" component={Password} />
-
         <Route path="/home" component={Home} />
-        {/* <Route path="/manageBatches" component={ManageBatches}/> */}
-        
-      {/* <Route path="/manageBatches/edit" component={Edit} />
-       <Route path="/manageBatches/delete" component={Delete}/>
-       <Route path="/manageBatches/addNewBatch" component={AddNewBatch}/> */}
-
         <Route path="/dashboard" component={Tabs}/>
         <Route path="/report" component={FeeReports}/>
         <Route path="/manage" component={Home}/>
@@ -55,8 +48,10 @@ function App() {
         <Route path="/leaves" component={Leaves}/>
         <Route path='/requests' component={Requests}/>
       </Switch>
-
-
+     
+      <Route path="/dashboard/edit" component={Edit} />
+       <Route path="/dashboard/delete" component={Delete}/>
+       <Route path="/dashboard/addNewBatch" component={AddNewBatch}/>
     </div>
 
 

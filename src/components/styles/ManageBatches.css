@@ -1,0 +1,143 @@
+.mb_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.mb_div input {
+  margin-right: 5%;
+}
+.batchLink {
+  text-decoration: none;
+  width: 16.3%;
+  color: white;
+  background: #009ef7;
+  text-align: center;
+  margin-left: 5%;
+  padding: 0.5%;
+  font-family: Poppins, Helvetica, sans-serif;
+}
+.batchLink:hover {
+  color: #f1faff;
+  background: rgb(53, 149, 246);
+}
+.mbContainer {
+  text-align: center;
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 0.95em;
+}
+.mbTable {
+  width: 90%;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 5%;
+  background: white;
+  box-shadow: 0 0 11px gray;
+}
+.mbTable tr {
+  border: none;
+  border-bottom: 1px solid #eee;
+}
+
+.mbTable th {
+  color: #b5b5c3;
+}
+.mbTable td {
+  color: #7e8299;
+}
+
+@media screen and (max-width: 800px) {
+
+      .mbContainer {
+        text-align:left;
+        font-family: Poppins, Helvetica, sans-serif;
+        font-size: 0.95em;
+      }
+  .mb_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10%;
+  }
+  .mb_div input {
+    margin-right: 5%;
+  }
+  .batchLink {
+    text-decoration: none;
+    width: 29%;
+    color: white;
+    background: #009ef6;
+    text-align: center;
+    margin-left: 5%;
+  }
+  /* Force table to not be like tables anymore */
+  .mbTable thead,tbody,th,td,tr {
+    display: block;
+  }
+  /* Hide table headers  */
+  thead tr {
+   display: none;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+  }
+
+  tr:nth-of-type(odd) {
+    background: #E4E6EF;
+  }
+  td:nth-of-type(n):before {
+    color: #b5b5c3;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  td:nth-of-type(1):before {
+    content: "Id";
+  }
+  td:nth-of-type(2):before {
+    content: "Course";
+  }
+  td:nth-of-type(3):before {
+    content: "Batch Start Date";
+  }
+  td:nth-of-type(4):before {
+    content: "Duration";
+  }
+  td:nth-of-type(5):before {
+    content: "Proposed End Date";
+  }
+  td:nth-of-type(6):before {
+    content: "Batch ID";
+  }
+  td:nth-of-type(7):before {
+    content: "Batch Status";
+  }
+  td:nth-of-type(8):before {
+    content: "Actual End Date";
+  }
+  td:nth-of-type(9):before {
+    content: "Actual Duration";
+  }
+  td:nth-of-type(10):before {
+    content: "Difference in Days";
+  }
+  td:nth-of-type(11):before {
+    content: "Edit";
+  }
+  td:nth-of-type(12):before {
+    content: "Delete";
+  }
+}

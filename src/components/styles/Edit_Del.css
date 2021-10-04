@@ -1,0 +1,46 @@
+.edit_deleteContainer {
+ 
+    text-align: center ;
+    margin-top: -25% ;
+    margin-left: 32% ;
+    position: relative ;
+    z-index: 1 ;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: #6b705c;
+  }
+  .edit_deleteDiv {
+    width: 40% ;
+    height: 80% ;
+    background: white;
+    box-shadow: 0 0 15px gray ;
+  }
+  .edit_delLink
+  {
+    text-decoration: none;
+    color:#7e8299;
+    padding: 3%;
+  }
+  .edit_delLink:hover
+  {
+   background: #f1faff;
+    color: #009ef7;
+  }
+  @media screen and (max-width: 800px) {
+    .edit_deleteDiv {
+        width: 60%;
+        height: 80%;
+        background: white;
+        box-shadow: 0 0 15px gray;
+      }
+      .edit_deleteContainer {
+        text-align: center;
+        margin-top: -205%;
+        margin-left: 28%;
+        position: relative;
+        z-index: 1;
+        font-family: Poppins, Helvetica, sans-serif;
+        font-size: 0.9em;
+        color: #6b705c;
+      }
+    }

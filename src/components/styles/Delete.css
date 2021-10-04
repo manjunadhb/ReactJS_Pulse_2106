@@ -1,0 +1,36 @@
+.deleteDiv label {
+    color: black;
+    padding-top: 4%;
+  }
+  .delGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .delGrid button {
+    all: unset;
+    color: white;
+    background: #009ef7;
+    border: none;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    padding: 1%;
+    width: 42%;
+  }
+  .delGrid button:hover {
+    color: #f1faff;
+    background: rgb(53, 149, 246);
+  }
+  .delGrid a {
+    color: #5e6278;
+    background: #e4e6ef;
+    text-decoration: none;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    width: 42%;
+    padding: 1%;
+  }
+  .delGrid a:hover {
+    background: #f1faff;
+    color: #009ef7;
+  }

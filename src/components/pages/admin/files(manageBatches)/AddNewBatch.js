@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+// import '../../styles/AddNewBatch.css';
+import '../../../styles/AddNewBatch.css'
 export default function AddNewBatch() {
     const onCreateBatch = () =>
     {
@@ -10,30 +11,15 @@ export default function AddNewBatch() {
         <div className="addNewBatchContainer">
         <div className="addNewBatchDiv">
            <h6><strong> Create New Batch</strong></h6><br/>
-           {/* <input type="radio" id="age1" name="age" value="30"/> */}
-  {/* <label for="age1">0 - 30</label><br/>
-  <input type="radio" id="age2" name="age" value="60"/>
-     <label for="age2">31 - 60</label><br/>  
-  <input type="radio" id="age3" name="age" value="100"/>
-  <label for="age3">61 - 100</label><br/><br/>
-  <input type="submit" value="Submit"/> */}
-           <label className="course">Course:</label> 
-          <input type="radio"  name="selectCourse" className="radioBtn rB1" value="c1"/>
-           <label for="c1"> &nbsp;IPhone Job Oriented Course</label><br/>
+           <label >Course:</label> 
+          <input type="radio" name="selectCourse" className="radioBtn rB1" value="c1"/>
+           <label for="c1"> &nbsp; &nbsp; &nbsp;IPhone Job Oriented Course</label><br/>
            <input type="radio" name="selectCourse" className="radioBtn rB2" value="c2"/>
-           <label for="c2">  &nbsp;React Native</label><br/>
+           <label for="c2">  &nbsp; &nbsp; &nbsp;React Native</label><br/>
            <input  type="radio" name="selectCourse" className="radioBtn rB3" value="c3"/>
-           <label for="c3">  &nbsp;Flutter</label><br/>
+           <label for="c3">  &nbsp; &nbsp; &nbsp;Flutter</label><br/>
            <input type="radio"  name="selectCourse" className="radioBtn rB4" value="c4"/>
-           <label for="c4">  &nbsp;Angular JS</label><br/>
-           
-           {/* <select >
-            <option  value="Select">Select</option>
-            <option value="IPhone Job Oriented Course">IPhone Job Oriented Course</option>
-            <option value="React Native">React Native</option>
-            <option value="Flutter">Flutter</option>
-            <option value="Angular JS">Angular JS</option>
-            </select> <br/> */}
+           <label for="c4">  &nbsp; &nbsp; &nbsp;Angular JS</label><br/>
             <div className="startDate">
            <label >Start Date:</label><input type="date"/><br/>
            </div>
@@ -64,7 +50,7 @@ export default function AddNewBatch() {
             </div>
             <div>
             <button onClick={onCreateBatch}>Create Batch</button>
-            <Link to="/manageBatches">Back</Link>
+            <Link to="/dashboard">Back</Link>
             </div>
  </div>
  </div>

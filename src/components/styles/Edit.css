@@ -1,0 +1,44 @@
+.editDiv label {
+    padding-top: 4%;
+    color: black;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    font-size: 1.2em;
+  }
+  .editDiv input {
+    margin-left: 2%;
+  }
+  .editGrid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .editGrid button {
+    all: unset;
+    width: 21%;
+    color: white;
+    background: #009ef7;
+    border: none;
+    margin-top: 4%;
+    padding: 1%;
+    margin-bottom: 2%;
+  }
+  .editGrid button:hover {
+    color: #f1faff;
+    background: rgb(53, 149, 246);
+  }
+  .editGrid a {
+    color: #5e6278;
+    background: #e4e6ef;
+    text-decoration: none;
+    margin-top: 4%;
+    width: 21%;
+    padding: 1%;
+    margin-bottom: 2%;
+  }
+  .editGrid a:hover {
+    background: #f1faff;
+    color: #009ef7;
+  }
+  
+  

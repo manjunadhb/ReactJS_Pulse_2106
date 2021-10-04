@@ -1,17 +1,19 @@
 import React from 'react'
 import { NavLink,Link} from 'react-router-dom'
+import '../../styles/ManageBatches.css';
 
 export default function ManageBatches() {
 
 return (
 <div>
         <div className="mb_div">
-            <Link className="batchLink" to="/manageBatches/addNewBatch">Add New Batch</Link><br/>
+            <Link className="batchLink" to="/dashboard/addNewBatch">Add New Batch</Link><br/>
             <input type="search" placeholder="Search"/>
             </div>
         <div className="mbContainer">
         <div className="mbTable">
            <table width="100%" >
+               <thead>
                <tr>
                    <th >Id</th>
                    <th >Course</th>
@@ -26,6 +28,8 @@ return (
                    <th >Edit</th>
                    <th >Delete</th>
               </tr>
+              </thead>
+              <tbody>
                <tr>
                    <td>1</td>
                    <td>React</td>
@@ -38,10 +42,10 @@ return (
                    <td>94</td>
                    <td>-26</td>
                    <td>
-                       <Link className="edit_delLink" to="/manageBatches/edit">Edit</Link>
+                       <Link className="edit_delLink" to="/dashboard/edit">Edit</Link>
                    </td>
                    <td>
-                       <Link  className="edit_delLink" to="/manageBatches/delete">Delete</Link>
+                       <Link  className="edit_delLink" to="/dashboard/delete">Delete</Link>
                        </td>
                </tr>
                <tr>
@@ -56,10 +60,10 @@ return (
                    <td>94</td>
                    <td>-26</td>
                    <td>
-                       <Link  className="edit_delLink"  to="/manageBatches/edit">Edit</Link>
+                       <Link  className="edit_delLink"  to="/dashboard/edit">Edit</Link>
                    </td>
                      
-                   <td> <Link className="edit_delLink" to="/manageBatches/delete">Delete</Link></td>
+                   <td> <Link className="edit_delLink" to="/dashboard/delete">Delete</Link></td>
                </tr>
                <tr>
                    <td >3</td>
@@ -73,9 +77,9 @@ return (
                    <td>94</td>
                    <td>-26</td>
                    <td>
-                   <Link  className="edit_delLink" to="/manageBatches/edit">Edit</Link>
+                   <Link  className="edit_delLink" to="/dashboard/edit">Edit</Link>
                        </td>
-                   <td> <Link  className="edit_delLink" to="/manageBatches/delete">Delete</Link></td>
+                   <td> <Link  className="edit_delLink" to="/dashboard/delete">Delete</Link></td>
                </tr>
                <tr>
                    <td >4</td>
@@ -89,9 +93,9 @@ return (
                    <td>94</td>
                    <td>-26</td>
                    <td>
-                   <Link  className="edit_delLink" to="/manageBatches/edit">Edit</Link>
+                   <Link  className="edit_delLink" to="/dashboard/edit">Edit</Link>
                    </td>
-                   <td> <Link className="edit_delLink" to="/manageBatches/delete">Delete</Link></td>
+                   <td> <Link className="edit_delLink" to="/dashboard/delete">Delete</Link></td>
                </tr>
                <tr>
                    <td >5</td>
@@ -105,11 +109,11 @@ return (
                    <td>94</td>
                    <td>-26</td>
                    <td>
-                   <Link  className="edit_delLink" to="/manageBatches/edit">Edit</Link>
+                   <Link  className="edit_delLink" to="/dashboard/edit">Edit</Link>
                    </td>
-                   <td> <Link  className="edit_delLink" to="/manageBatches/delete">Delete</Link></td>
+                   <td> <Link  className="edit_delLink" to="/dashboard/delete">Delete</Link></td>
                </tr>
-
+</tbody>
            </table>
         </div>
         </div>

@@ -38,9 +38,9 @@ export default function Navigation() {
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/requests">Requests</NavLink>
                     </li>
-                    {/* <li className="nav-item">
+                    <li className="nav-item">
                         <NavLink className="nav-link" to="/manageBatches">MB</NavLink>
-                    </li> */}
+                    </li>
                     {/* <li className="nav-item">
                         <NavLink className="nav-link" to="/manageBatches/edit"></NavLink>
                     </li>

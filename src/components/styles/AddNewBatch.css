@@ -1,0 +1,122 @@
+.addNewBatchContainer {
+    text-align: center ;
+    margin-top: -30%;
+    margin-left: 35%;
+    position: absolute;
+    z-index: 1;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 0.9em;
+    color: #6b705c;
+  }
+  .addNewBatchDiv {
+    width: 140%;
+    height: 490px;
+    background: white;
+    box-shadow: 0 0 15px gray;
+  }
+  .addNewBatchDiv h6 {
+    padding-top: 5%;
+    color: black;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+  }
+  .addNewBatchDiv > label {
+    all: unset;
+    margin-left: -5% ;
+  }
+  .rB1
+   {
+     margin-left: 3% ;
+  }
+  .rB2 {
+    margin-left: -15% ;
+  }
+  .rB3 {
+    margin-left: -25.9% ;
+  }
+  .rB4 {
+    margin-left: -17.9%;
+  }
+  .startDate label {
+    all:unset;
+    margin-left: -5%;
+    margin-top: 2% ;
+  }
+  .startDate input {
+    margin-left: -12% ;
+  }
+  .batchId label {
+    all:unset;
+    margin-left: -1%;
+    margin-top: 2%;
+  }
+  .batchId input {
+    margin-left: -6%;
+  }
+  .feeDetails label {
+    all:unset;
+    margin-left: -13%;
+    margin-top: 2%;
+  }
+  .feeDetails div {
+    width: 50%;
+    height: 120px;
+    background: white;
+    margin-left: -18%;
+    margin-top: 4%;
+    box-shadow: 0 0 5px gray;
+  }
+  .batchStatus label {
+    all:unset;
+    margin-left: -17%;
+    margin-top: 2%;
+  }
+  .batchStatus select {
+    margin-left: -18%;
+    margin-top: 2%;
+  }
+  .addNewBatchDiv div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .addNewBatchDiv button {
+    all:unset;
+    color: white;
+    background: #009ef7 ;
+    border: none ;
+    margin-top: 6%;
+    padding: 1%;
+  }
+  .addNewBatchDiv button:hover {
+    color: white ;
+    background: rgb(53, 149, 246) ;
+  }
+  .addNewBatchDiv a {
+    all:unset;
+    color: #5e6278;
+    background: #e4e6ef;
+    text-decoration: none;
+    margin-top: 6%;
+    width: 20%;
+    padding: 1%;
+  }
+  .addNewBatchDiv a:hover {
+    background: #f1faff;
+    color: #009ef7;
+  }
+
+
+
+@media screen and (max-width: 800px) {
+    .addNewBatchContainer {
+        text-align: center;
+        margin-top:-205%;
+        margin-left: 15%;
+        position: absolute;
+        z-index: 1;
+        font-family: Poppins, Helvetica, sans-serif;
+        font-size: 0.9em;
+        color: #6b705c !important;
+      }
+    }
